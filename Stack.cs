@@ -21,6 +21,35 @@ namespace StackAndQueue_UsingLinkedList
             temp.next = head;
             head = temp;
         }
+        public void pop()
+        {
+            if (head == null)
+            {
+                Console.Write("Stack is empty");
+                return;
+            }
+
+            head = (head).next;
+            Console.WriteLine("The stack is modified");
+            
+        }
+        public void peek()
+        {
+            if (!isEmpty())
+            {
+                Console.WriteLine("The stack is not modified");
+                Console.WriteLine(head.data);
+            }
+            else
+            {
+                Console.WriteLine("Stack is empty");
+                return ;
+            }
+        }
+        public bool isEmpty()
+        {
+            return head == null;
+        }
         public void Display()
         {
 

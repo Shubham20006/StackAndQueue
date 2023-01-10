@@ -21,7 +21,20 @@ namespace StackAndQueue_UsingLinkedList
             Console.WriteLine("------After push------");
             obj.Display();
             Console.WriteLine("\n--------------------------------------------");
-
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine("------After pop------");
+                obj.pop();
+                obj.Display();
+                Console.WriteLine("\n--------------------------------------------");
+                Console.WriteLine("------After peek------");
+                obj.peek();
+                Console.WriteLine("\n--------------------------------------------");
+                Console.WriteLine("------Stack Empty : True/False------");
+                Console.WriteLine(obj.isEmpty());
+                Console.WriteLine("\n--------------------------------------------");
+            }
+            Console.ReadLine();
         }
     }
 }
