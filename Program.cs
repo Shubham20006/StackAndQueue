@@ -12,14 +12,29 @@ namespace StackAndQueue_UsingLinkedList
         public static void Main(string[] args)
         {
             Queue obj = new Queue();
-
-            // insert Queue value
+            Console.WriteLine("After Enqueue");
+            // insert Stack value
             obj.enqueue(56);
             obj.enqueue(30);
             obj.enqueue(70);
             obj.display();
-           
             
+            Console.WriteLine("\n-----------------");
+            Console.WriteLine("Queue Empty : "+obj.isEmpty());
+            Console.WriteLine("\n-----------------");
+            Console.WriteLine("After Dequeue");
+                obj.dequeue();
+            obj.display();
+            Console.WriteLine("\n-----------------");
+            Console.WriteLine("After Dequeue");
+            obj.dequeue();
+            obj.display();
+            Console.WriteLine("\n-----------------");
+            Console.WriteLine("After Dequeue");
+            obj.dequeue();
+            obj.display();
+            Console.WriteLine("\n-----------------");
+            Console.WriteLine("Queue Empty : "+obj.isEmpty());
             Console.ReadLine();
 
         }

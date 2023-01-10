@@ -26,7 +26,16 @@ namespace StackAndQueue_UsingLinkedList
             this.tail = temp;
 
         }
-      
+        public void dequeue()
+        { 
+            if (this.head == null)
+                return;          
+            this.head = this.head.next;           
+        }
+        public bool isEmpty()
+        {
+            return head == null;
+        }
     
         public void display()
         {
